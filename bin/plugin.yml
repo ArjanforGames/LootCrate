@@ -1,0 +1,26 @@
+name: LootCrate
+main: com.arjanforgames.LootCrate.Main
+version: 1.0
+author: Arjan Kuiper
+description: LootCrate
+softdepend: [Vault]
+ 
+commands:
+  uncrate:
+    description: Uncrate your loot crate!
+  givecrate:
+    description: Give a lootcrate to a player.
+
+permissions:
+    lootcrate.uncratecmd:
+        description: Allow users to uncrate with the command.
+        default: op
+    lootcrate.uncratesign:
+        description: Allow users to uncrate by clicking on a sign.
+        default: true
+    lootcrate.createsign:
+        description: Allow users to place signs that can be clicked to uncrate.
+        default: op
+    lootcrate.givecrate:
+        description: Allow players to give lootcrates to other players.
+        default: op
